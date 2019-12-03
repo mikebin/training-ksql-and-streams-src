@@ -29,5 +29,6 @@ dependencies {
     compile group: "org.slf4j", name: "slf4j-log4j12", version: "1.7.25"
     compile group: "org.apache.kafka", name: "kafka-clients", version: "2.3.0"
     compile group: "org.apache.kafka", name: "kafka-streams", version: "2.3.0"
+    compile group: "io.streamthoughts", name: "azkarra-streams", version: "0.4"
 }
 
