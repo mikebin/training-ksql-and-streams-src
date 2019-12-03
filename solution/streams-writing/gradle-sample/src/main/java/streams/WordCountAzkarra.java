@@ -31,7 +31,6 @@ public class WordCountAzkarra {
   public static class WordCountTopology implements TopologyProvider {
     @Override
     public Topology get() {
-      final Serde<String> stringSerde = Serdes.String();
       StreamsBuilder builder = new StreamsBuilder();
       builder.stream("lines-topic", Consumed.with(Serdes.String(), Serdes.String()))
           .flatMapValues(line -> Arrays.asList(line.toLowerCase(Locale.getDefault()).split(" ")))
